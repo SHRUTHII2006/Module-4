@@ -4,31 +4,51 @@
 ---
 
 ### AIM  
-To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
+To create python program to Place result="You can't divide with 0" to the right place so that program avoids ZeroDivisionError.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read a string `input_str` from the user using `input()`.  
-3. Split the input string using commas (`,`) to create a list of grades.  
-4. Use a `try` block to attempt converting each item in the grades list to an integer and store the result in `l1`.  
-5. If the conversion is successful, print the list `l1` containing the integer values.  
-6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
-7. Terminate the program.
+1.Prompt the user to enter the numerator.
 
----
+2.Prompt the user to enter the denominator.
+
+3.If the denominator is 0:
+
+4.Set result = "You can't divide with 0"
+
+Else:
+
+5.Perform the division: result = numerator / denominator
+
+Display or return the result.
+
+
 
 ### PROGRAM
 
-```
-Reg.No
-Name
-Add Your Code Here
+a=int(input())
 
-```
+b=int(input())
 
+try:
+
+    c=a/b
+    
+    print(c)
+    
+except:
+
+    print("You can't divide with 0")
+    
 ### OUTPUT
 
+
+![image](https://github.com/user-attachments/assets/c59b99a4-f8dc-4594-abe2-6d04c4599280)
+
+
 ### RESULT
+Thus the python program to Place result="You can't divide with 0" to the right place so that program avoids ZeroDivisionError was created and executed successfully.
+
+
